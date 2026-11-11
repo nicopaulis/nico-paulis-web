@@ -13,11 +13,6 @@ menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () =>
   menuButton?.setAttribute('aria-expanded', 'false');
 }));
 
-document.querySelectorAll('[data-pack]').forEach(link => link.addEventListener('click', () => {
-  const type = document.querySelector('#project-type');
-  if (type) type.value = link.dataset.pack;
-}));
-
 document.querySelector('#quote-form')?.addEventListener('submit', event => {
   event.preventDefault();
   const form = new FormData(event.currentTarget);

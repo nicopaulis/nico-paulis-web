@@ -51,3 +51,11 @@
 @media(max-width:800px){.about-section{grid-template-columns:1fr}.about-copy{padding:75px 8vw}.about-image{width:min(78vw,300px);height:520px;min-height:0;max-height:none;margin:0 auto}}
 @media(max-width:480px){.hero-visual{height:420px;width:min(78vw,300px)}.about-image{height:500px;width:min(78vw,280px)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+.collab-invite{margin-top:70px;padding:clamp(32px,5vw,66px);background:var(--ink);color:var(--paper);display:grid;grid-template-columns:1fr .8fr;align-items:end;gap:48px}
+.collab-invite .eyebrow{color:var(--acid);margin-bottom:20px}
+.collab-invite h3{font-size:clamp(44px,6vw,76px);line-height:.94;letter-spacing:-.075em;font-weight:600;margin:0}
+.collab-invite h3 em{font-family:var(--serif);font-weight:400;letter-spacing:-.065em}
+.collab-invite-copy p{max-width:440px;color:#b7b8af;font-size:14px;margin-bottom:24px}
+@media(max-width:800px){.collab-invite{grid-template-columns:1fr;gap:26px;margin-top:50px;padding:34px}}
+@media(max-width:480px){.collab-invite{padding:28px 22px}.collab-invite h3{font-size:52px}.collab-invite-copy p{font-size:13px}}
